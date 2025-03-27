@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+         * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #E4EFE7;
+            line-height: 1.7;
+            color:#1f2937;
+            transition: all 0.4s ease;
+        }
+        header {
+            background: linear-gradient(#C68EFD, #E9A5F1);  
+            padding: 25px;
+            position: sticky;
+            z-index: 1000;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+        }
+        li{
+            list-style: none;
+            
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            flex-direction: row;
+        }
+        a{
+            text-decoration: none;
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: 800;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            justify-content: flex-start;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 18px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+        nav .active,
+        nav a:hover {
+            background-color: #fff;
+            color: #3b82f6;
+        }
+      .section_h1{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding-top:100px;
+        text-transform: uppercase;
+        font-weight: 800;
+        
+      }
+      .section_p{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding-top: none;
+        text-transform: uppercase;
+        font-weight: 800;
+        padding-bottom: 20px;
+       
+      }
+      .card {
+            background: linear-gradient(#9ACBD0,#48A6A7);
+            color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+           align-items: center;
+           justify-content: center;
+            height: 150px;
+            width: 150px;
+            display: flex;
+            margin: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            background-color: #fff;
+            color: #3b82f6;
+        }
+        .projects__p{
+            color:#fff;
+           
+        }
+      
+      .projects_div{
+        background: #DDEB9D;
+        display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+           padding: 20px;
+           flex-wrap: wrap;
+          
+        justify-content: space-between;
+      
+        
+      }
+      .section__contact{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--PROJECT-PBGCOLOR);
+    gap: 2rem;
+}
+.contact__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--FONT-COLOR);
+}
+.contact__h2{
+    font-size: 3.5rem;
+}
+.contact__p{
+    font-style: italic;
+    font-weight: 100;
+}
+.contact__links a{
+    color: var(--FONT-COLOR);
+    padding: 2rem;
+    text-decoration: none;
+}
+
+.contact__links a:hover{
+    transform: translateY(-2rem);
+    transition: all 0.5s ease;
+}
+
+/* || FOOTER */
+.footer{
+    height: 120px;
+    background-color: rgb(52, 53, 58);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 4px solid var(--POPPING-RED);
+}
+
+.footer p{
+    color: var(--FONT-COLOR);
+    padding: 1rem;
+}
+
+.footer__link{
+    color: var(--FONT-COLOR);
+    text-decoration: none;
+}
+    </style>
+    <title>Final Project</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">Portfolio</div>
+            <nav>
+                <ul>
+                    <li><a class="nav__links" href="#welcome-section">About</a></li><br>
+                    <li><a class="nav__links" href="#projects">Work</a></li><br>
+                    <li><a class="nav__links" href="#contact">Contact</a></li><br>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <section class="section_first" id="welcome-section">
+            <h1 class="section_h1">Hey I am Earlven</h1>
+            <p class="section_p">Web Developer</p>
+
+          
+
+        </section>
+
+
+    <main>
+       
+        <section class="section__projects" id="projects">
+           
+
+            <div class="projects_div">
+                
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/balancesheet.html" alt="balancesheet" target="_blank">
+                                    <p class="projects__p">Balance Sheet</p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/cafemenu.html" alt="cafemenu" target="_blank">
+                                    <p class="projects__p">Cafe Menu</p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/catpainting.html" alt="catpainting" target="_blank">
+                                    <p class="projects__p">Cat Painting</p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/catphoto.html" alt="catphoto" target="_blank">
+                                    <p class="projects__p">Cat Photo</p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/colormarker.html" alt="colormarker" target="_blank">
+                                    <p class="projects__p">Colored Marker</p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/ferriswheel.html" alt="ferriswheel" target="_blank">
+                                    <p class="projects__p">Ferris Wheel</p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/flex-boxgallery.html" alt="flexboxgallery" target="_blank">
+                                    <p class="projects__p">Flexbox Gallery</p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/info.html" alt="info" target="_blank">
+                                    <p class="projects__p">Technical Production</p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/land.html#How_it_works" alt="land" target="_blank">
+                                    <p class="projects__p">Product Landing </p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/magazine.html" alt="magazine" target="_blank">
+                                    <p class="projects__p">Magazine</p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/nutritionlabel.html" alt="nutritionlabel" target="_blank">
+                                    <p class="projects__p">Nutrition Label</p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/penguin.html" alt="penguin" target="_blank">
+                                    <p class="projects__p">Penguin</p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/piano.html" alt="piano" target="_blank">
+                                    <p class="projects__p">Piano</p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/Quiz.html" alt="Quiz" target="_blank">
+                                    <p class="projects__p">Accessibility Quiz</p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/registrationform.html" alt="registrationform" target="_blank">
+                                    <p class="projects__p">Registration Form</p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/rothkopainting.html" alt="rothkopainting" target="_blank">
+                                    <p class="projects__p">Rothko Painting</p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/skyline.html" alt="skyline" target="_blank">
+                                    <p class="projects__p">City Skyline</p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/survey.html" alt="survey" target="_blank">
+                                    <p class="projects__p">Survey</p>
+                                </a>
+                        </div>
+                        <div class="card">
+                                <a href="file:///C:/Users/user/Documents/EARLVEN%20JSUTIN%203RD%20YEAR/tributepage.html" alt="tributepage" target="_blank">
+                                    <p class="projects__p">Tribute Page</p>
+                                </a>
+                        </div>
+            
+                   
+            </div>
+        </section>                
+    </main>
+           
+
+    <section class="section__contact" id="contact">
+        <div class="contact__header">
+            <h2 class="contact__h2">Let's work together...</h2>
+            <p class="contact__p">How do you take your coffee?</p>
+        </div>
+        <div class="contact__links">
+            <a href="https://www.facebook.com/freecodecamp" id="profile-link" target="_blank">Facebook</a>
+            <a href="https://github.com/freecodecamp" id="profile-link" target="_blank">Github</a>
+            <a href="https://twitter.com/freecodecamp" id="profile-link" target="_blank">Twitter</a>
+            <a href="mailto:example@example.com" id="profile-link" target="_blank">Send an Email</a>
+            <a href=" tel:555-555-5555 id="profile-link" target="_blank"">Call me</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="wrap inline">**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+        <p class="wrap inline">&copy; Created for <a class="footer__link" href="https://freecodecamp.org/">freeCodeCamp</a></p>
+    </footer>
+
+    
+</body>
+</html>

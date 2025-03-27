@@ -1,0 +1,194 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technical Documentation</title>
+   <style>
+    @media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+  line-height: 1.3rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: rgb(237, 73, 58);
+  color: white;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.navbar-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: whitesmoke;
+  margin: 10px 0 10px 10px ;
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase ;
+  letter-spacing: 0.1rem;
+  color: White;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+a {
+  border-top: 1px solid white;
+  padding: 10px
+}
+
+a:last-child {
+  border-bottom: 1px solid white;
+}
+
+.nav-link:hover {
+  background-color: #555;
+}
+
+main {
+  margin-left: 250px; 
+  padding: 20px 40px 0 20px;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+header {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.8rem;
+  margin-bottom: 20px;
+}
+
+span {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+
+.code-caveat {
+  font-weight: normal;
+  font-size: 0.75rem;
+  text-decoration: none;
+  font-style: italic;
+}
+
+code {
+  display: block;
+  background-color: #f7f7f7;
+  border-radius: 4px;
+  margin: 20px;
+  padding: 15px;
+}
+
+li {
+  margin: 10px 0 5px 20px;
+  list-style:circle
+}
+   </style>
+</head>
+<body>
+
+<nav id="navbar">
+    <header class="navbar-header">General Coding information</header>
+    <a class="nav-link" href="#HTML_and_CSS">HTML and CSS</a>
+    <a class="nav-link" href="#C++">C++</a>
+    <a class="nav-link" href="#Java">Java</a>
+    <a class="nav-link" href="#Phython">Phython</a>
+     <a class="nav-link" href="#APIs">APIs</a>
+    
+   
+</nav>
+
+<main id="main-doc">
+
+    <section id="HTML_and_CSS" class="main-section">
+        <header>HTML and CSS</header>
+         <p><span>The HyperText Markup Language or HTML</span> is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+         <p>HTML code example: *</p>
+           <code> < p > this a paragraph element in HTML < /p > </p></code>
+         <p><span>Cascading Style Sheets (CSS)</span> is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+         <p>CSS code example: *</p>
+            <code> body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+} </code>
+
+    </section> 
+
+    <section id="C++" class="main-section">
+        <header>C++</header>
+         <p><span>C++</span>,  is one of the world's most popular programming languages. C++ can be found in today's operating systems, Graphical User Interfaces, and embedded systems. C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs..</p>
+         <p>C++ code example: *</p>
+           <code> #include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World!";
+  return 0;
+};</code>
+    </section>
+
+<section id="Java" class="main-section">
+        <header>Java</header>
+         <p><span>Java</span> Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is intended to let application developers Write Once and Run Anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation. Java was developed by James Gosling at Sun Microsystems Inc. in May 1995 and later acquired by Oracle Corporation and is widely used for developing applications for desktop, web, and mobile devices.
+</p>
+         <p>Java code example: *</p>
+           <code> public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}</code>
+    </section>
+ <section id="Phython" class="main-section">
+        <header>Phython</header>
+         <p><span>Phython</span>,  is a dynamic, interpreted (bytecode-compiled) language. There are no type declarations of variables, parameters, functions, or methods in source code. This makes the code short and flexible, and you lose the compile-time type checking of the source code.
+         <p>Phython code example: *</p>
+           <code> print("Hello, World!")
+}</code>
+    </section>
+    
+
+    <section id="APIs" class="main-section">
+        <header>APIs</header>
+         <p>An <span>Application Programming Interface (API)</span> is a way for two or more computer programs to communicate with each other. It is a type of software interface, offering a service to other pieces of software.[1] A document or standard that describes how to build or use such a connection or interface is called an API specification. A computer system that meets this standard is said to implement or expose an API. The term API may refer either to the specification or to the implementation. Whereas a system's user interface dictates how its end-users interact with the system in question, its API dictates how to write code that takes advantage of that system's capabilities.</p>
+         <p>Common font API's examples:</p>
+              <li>Google Fonts</li>
+              <li>Font Awesome</li>
+              <li>Mapbox</li>
+              <li>Adobe</li>
+              <li>GitHub</li>
+    </section>
+
+    <p><span class="code-caveat">(* lesser and greater than symbols are separated to show code and not apply it in the example)</span></p>
+
+</main>
+
+</body>
+</html>

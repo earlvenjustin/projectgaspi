@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing</title>
+   <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FBE4D6; /* Light coffee cream background */
+  line-height: 1.7;
+  color: #1f2937; /* Dark gray for text */
+  transition: all 0.4s ease;
+}
+
+/* Header and Navbar */
+header {
+  background: linear-gradient(130deg, #47eaff, #7e8bff); /* Gradient header */
+  padding: 25px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  position: relative; /* Changed from sticky to avoid conflict with fixed nav */
+}
+
+#nav-bar {
+  position: fixed; /* Fixed to top for test #23 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(130deg, #47eaff, #7e8bff); /* Match header gradient */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.nav-bar a {
+  color: #1f2937; /* Darker text for contrast */
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.nav-bar a:hover {
+  background: #3b82f6; /* Blue hover effect */
+  color: #fff;
+}
+
+/* Header Image */
+.header-img {
+  text-align: center;
+  padding-top: 60px; /* Offset for fixed navbar */
+}
+
+/* Form */
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#email {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #1f2937;
+  border-radius: 5px;
+}
+
+#submit {
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: 1px solid #3b82f6;
+  background: none;
+  color: #3b82f6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#submit:hover {
+  background: #3b82f6;
+  color: #fff;
+}
+
+/* Sections */
+.coffee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1f2937;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Menu with Flexbox */
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.menu1, .menu2, .menu3 {
+  border: 2px solid #0f1010;
+  border-radius: 24px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  padding: 8px 16px;
+  border: 1px solid #3b82f6;
+  background: none;
+  color: #3b82f6;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn.active,
+.btn:hover {
+  background: #3b82f6;
+  color: #fff;
+}
+
+/* Video */
+.vid {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background: brown; /* Coffee brown */
+  color: #d1d5d3;
+  padding: 30px;
+  text-align: center;
+  margin-top: 60px;
+  border-top: 5px solid #fbbf24; /* Yellow accent */
+}
+
+footer a {
+  color: #d1d5d3;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #fbbf24;
+}
+
+/* Media Query for Responsiveness */
+@media screen and (max-width: 600px) {
+  #nav-bar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .nav-bar a {
+    padding: 8px 16px;
+    margin: 5px 0;
+  }
+
+  .header-img {
+    padding-top: 100px; /* Extra space for stacked navbar */
+  }
+
+  .menu {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .menu1, .menu2, .menu3 {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  #email {
+    width: 100%;
+  }
+}
+   </style>
+</head>
+<body>
+    <header id="header">
+        
+        <div class="header-img">
+            <img id="header-img" src="https://www.pngplay.com/wp-content/uploads/7/Cafe-Logo-Background-PNG-Image.png" width="150" height="220" alt="Cafe Logo">
+        </div>
+        <nav id="nav-bar">
+            <a class="nav-link" href="#Features">Features</a>
+            <a class="nav-link" href="#How_it_works">How it works</a>
+            <a class="nav-link" href="#Pricing">Pricing</a>
+        </nav>
+    </header>
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <label for="email">
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+            <input type="submit" id="submit">
+        </label>
+    </form>
+
+    <section id="Features">
+        <h2>Features</h2>
+        <p>Discover the rich flavors and premium quality of our coffee blends.</p>
+    </section>
+
+    <section id="How_it_works">
+        <h2>How It Works</h2>
+        <div class="vid">
+            <iframe id="video" height="240" src="https://www.youtube-nocookie.com/embed/Atr97iC4HFc?rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="Pricing">
+        <h2>Choose Your Coffee</h2>
+        <h5 class="quote">"Fuel Your Day One Cup at a Time" and <br>"Brewing Happiness, One Bean at a Time"</h5>
+        <div class="menu">
+            <div class="menu1">
+                <h4>Black Coffee</h4>
+                <p>75.00</p>
+                <img src="https://cdn.shopify.com/s/files/1/0918/3414/files/perfect-cup-black-coffee.jpg?v=1498751612" width="150" height="120" alt="Black Coffee">
+                <button class="btn">Click Here</button>
+            </div>
+            <div class="menu2">
+                <h4>Iced Coffee</h4>
+                <p>50.00</p>
+                <img src="https://frostingandfettuccine.com/wp-content/uploads/2022/12/Caramel-Iced-Coffee-6.jpg" width="150" height="120" alt="Iced Coffee">
+                <button class="btn">Click Here</button>
+            </div>
+            <div class="menu3">
+                <h4>Cappuccino</h4>
+                <p>120.00</p>
+                <img src="https://www.streetcafe.com/cdn/shop/products/cappuccino-filled-cup-on-red-saucer-1414304_f449db4a-bef1-46b6-af0c-072a5c0cb94c_503x503.jpg?v=1604938883" width="150" height="120" alt="Cappuccino">
+                <button class="btn">Click Here</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+    </footer>
+</body>
+</html>
